@@ -1,28 +1,29 @@
-import {MakeProfile} from "./profile";
+import React from "react";
+import MakeProfile from "./profile";
+import daniel from "./images/Självporträtt.png";
+
 
 const profiles = [
-    MakeProfile(1, "Daniel Sandström", "mail@danielsandstrom.org", "+46705908530", "../images/Självproträtt.png",100),
-    MakeProfile(2, "test testson", "test@gmail.com", "+460011122233", "../images/icon.svg", 100)
+    MakeProfile("1", "Daniel Sandström", "mail@danielsandstrom.org", "+46705908530", daniel,128),
+    MakeProfile("2", "test testson", "test@gmail.com", "+460011122233", "../images/icon.svg", 100)
 ]
 
-function getProfile(id) {
-    return profiles.find(profile => profile.id === id);
+function GetProfile(id) {
+    return profiles.find(p => p.id == id);
 }
 
 function VisualizeProfile(profile) {
-    return(
-        <>
-            <a>{profile.name}</a>
-            <a>{profile.mail}</a>
-            <a>{profile.phone}</a>
-            <img href={profile.imageUrl} width={profile.size}/>
-        </>
+    return (
+        <div className="profile">
+            <img src={profile.imageUrl} alt={profile.name}/>
+            <p>{profile.name}</p>
+            <p>{profile.mail}</p>
+            <p>{profile.phone}</p>
+        </div>
     );
 }
 
-function projectProfile(id) {
-    const p = getProfile(id)
+export default function ProjectProfile({ id }) {
+    const p = GetProfile(id)
     return VisualizeProfile(p);
 }
-
-export default projectProfile;

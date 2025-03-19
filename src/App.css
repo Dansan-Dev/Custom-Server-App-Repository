@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+/* --- Custom --- */
+
+/* PROFILE*/
+.profile p{
+  color: wheat;
+}
+
+.profile img{
+  border-radius: 15%;
+  height: 192px;
+  width: auto;
+}

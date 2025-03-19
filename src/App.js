@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <br/>
         <ProjectProfile className={styles.profile}
-            id={"1"}
+            id={"2"}
         />
       </header>
     </div>

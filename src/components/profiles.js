@@ -1,11 +1,12 @@
 import React from "react";
 import MakeProfile from "./profile";
 import daniel from "./images/Självporträtt.png";
+import logo from "./images/logo.svg";
 
 
 const profiles = [
     MakeProfile("1", "Daniel Sandström", "mail@danielsandstrom.org", "+46705908530", daniel,128),
-    MakeProfile("2", "test testson", "test@gmail.com", "+460011122233", "../images/icon.svg", 100)
+    MakeProfile("2", "test testson", "test@gmail.com", "+460011122233", logo, 100)
 ]
 
 function GetProfile(id) {
@@ -25,5 +26,6 @@ function VisualizeProfile(profile) {
 
 export default function ProjectProfile({ id }) {
     const p = GetProfile(id)
+    if (!p) return <div>No profile found</div>;
     return VisualizeProfile(p);
 }

@@ -3,7 +3,7 @@
 This my server app that I use to learn HTML, JavaScript, CSS, React and more.
 
 You can get to the site [here](https://test-fly-io-dansan-holy-grass-1585.fly.dev).
-It might take some time before you get in for the machine to get running.
+It might take some time before you get in, because the machine needs to start and get running.
 
 ### Tools
 This is a site from **fly.io**. If you provide them with a React repository they will set up docker for you.

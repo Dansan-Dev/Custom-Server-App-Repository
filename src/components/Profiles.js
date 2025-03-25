@@ -1,5 +1,5 @@
 import React from "react";
-import MakeProfile from "./profile";
+import MakeProfile from "./Profile";
 import daniel from "./images/Självporträtt.png";
 import logo from "./images/logo.svg";
 
@@ -10,7 +10,7 @@ const profiles = [
 ]
 
 function GetProfile(id) {
-    return profiles.find(p => p.id == id);
+    return profiles.find(p => p.id === id);
 }
 
 function VisualizeProfile(profile) {
@@ -24,7 +24,7 @@ function VisualizeProfile(profile) {
     );
 }
 
-export default function ProjectProfile({ id }) {
+export default function ProjProfile({ id }) {
     const p = GetProfile(id)
     if (!p) return <div>No profile found</div>;
     return VisualizeProfile(p);

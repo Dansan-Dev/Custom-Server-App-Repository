@@ -52,8 +52,14 @@
 
 /* Button */
 .linked-button{
+  font-family: "Courier New";
+  font-weight: bold;
+  text-shadow: black 1.5px 1.5px 1px;
   color: white;
   background-color: darkcyan;
-  width: 100px;
-  height: 40px;
+  border-color: #006565;
+  border-width: 3px;
+  width: 160px;
+  height: 60px;
+  font-size: 18px;
 }

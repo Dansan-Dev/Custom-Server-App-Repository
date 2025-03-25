@@ -49,3 +49,11 @@
   height: 192px;
   width: auto;
 }
+
+/* Button */
+.linked-button{
+  color: white;
+  background-color: darkcyan;
+  width: 100px;
+  height: 40px;
+}

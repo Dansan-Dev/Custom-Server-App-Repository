@@ -1,14 +1,15 @@
-import ProjectProfile from "./components/profiles";
-import styles from './App.css';
+import ReactDOM from 'react-dom'
+import * as React from 'react'
+import { BrowserRouter } from 'react-router'
+import AppManager from "./components/AppManager";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <br/>
-        <ProjectProfile className={styles.profile}
-            id={"2"}
-        />
+        <BrowserRouter>
+          <AppManager />
+        </BrowserRouter>
       </header>
     </div>
   );

@@ -1,7 +1,3 @@
-import { Link, useNavigate } from "react-router"
-
-import ProjProfile from "./Profiles";
-import styles from "../App.css";
 import * as React from "react";
 import LinkedButton from "./LinkedButton";
 

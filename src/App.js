@@ -1,4 +1,3 @@
-import ReactDOM from 'react-dom'
 import * as React from 'react'
 import { BrowserRouter } from 'react-router'
 import AppManager from "./components/AppManager";

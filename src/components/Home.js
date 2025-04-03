@@ -6,7 +6,9 @@ function Home() {
         <>
             <h1>Welcome to my website</h1>
             <br/>
-            <LinkedButton path="/aboutme" name="About me"></LinkedButton>
+            <LinkedButton path="/aboutme" name="About me"/>
+            <br/>
+            <LinkedButton path="/clicking" name="Clicking Game"/>
         </>
     )
 }

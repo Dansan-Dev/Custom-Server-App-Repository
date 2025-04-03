@@ -63,3 +63,15 @@
   height: 60px;
   font-size: 18px;
 }
+
+.click-button{
+  font-family: "Courier New";
+  font-weight: bold;
+  text-shadow: black 1.5px 1.5px 1px;
+  color: white;
+  background-color: darkcyan;
+  border-color: #006565;
+  border-width: 3px;
+  padding: 10px 20px;
+  font-size: 18px;
+}
